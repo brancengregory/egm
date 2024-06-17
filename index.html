@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Albums and Charts</title>
+  <link rel="stylesheet" href="output.css">
+  <script src="https://unpkg.com/htmx.org@1.9.12/dist/htmx.min.js"></script>
+  <script src="https://unpkg.com/hyperscript.org@0.9.12"></script>
+</head>
+<body>
+  <header class="navbar py-4 px-10 bg-accent">
+    <a class="mx-auto text-4xl font-black uppercase tracking-wider text-accent-content">Eugene Gregory</a>
+  </header>
+  <main class="px-10">
+    <section class="pt-10">
+      <h2 class="text-2xl font-bold">Albums</h2>
+      <div class="flex flex-wrap">
+        <div class="collapse collapse-arrow bg-neutral my-1" _="on click toggle .collapse-open">
+          <h3 class="collapse-title">At Your Feet</h3>
+          <ul class="collapse-content">
+            <li>
+              <a href="albums/at_your_feet/01 - Track 1.flac">Track 1</a>
+              <audio controls>
+                <source src="albums/at_your_feet/01 - Track 1.flac" type="audio/flac">
+                Your browser does not support the audio element.
+              </audio>
+            </li>
+            <li>
+              <a href="albums/at_your_feet/02 - Track 2.flac">Track 2</a>
+              <audio controls>
+                <source src="albums/at_your_feet/02 - Track 2.flac" type="audio/flac">
+                Your browser does not support the audio element.
+              </audio>
+            </li>
+            <li>
+              <a href="albums/at_your_feet/03 - Track 3.flac">Track 3</a>
+              <audio controls>
+                <source src="albums/at_your_feet/03 - Track 3.flac" type="audio/flac">
+                Your browser does not support the audio element.
+              </audio>
+            </li>
+            <li>
+              <a href="albums/at_your_feet/04 - Track 4.flac">Track 4</a>
+              <audio controls>
+                <source src="albums/at_your_feet/04 - Track 4.flac" type="audio/flac">
+                Your browser does not support the audio element.
+              </audio>
+            </li>
+            <li>
+              <a href="albums/at_your_feet/05 - Track 5.flac">Track 5</a>
+              <audio controls>
+                <source src="albums/at_your_feet/05 - Track 5.flac" type="audio/flac">
+                Your browser does not support the audio element.
+              </audio>
+            </li>
+            <li>
+              <a href="albums/at_your_feet/06 - Track 6.flac">Track 6</a>
+              <audio controls>
+                <source src="albums/at_your_feet/06 - Track 6.flac" type="audio/flac">
+                Your browser does not support the audio element.
+              </audio>
+            </li>
+            <li>
+              <a href="albums/at_your_feet/07 - Track 7.flac">Track 7</a>
+              <audio controls>
+                <source src="albums/at_your_feet/07 - Track 7.flac" type="audio/flac">
+                Your browser does not support the audio element.
+              </audio>
+            </li>
+            <li>
+              <a href="albums/at_your_feet/08 - Track 8.flac">Track 8</a>
+              <audio controls>
+                <source src="albums/at_your_feet/08 - Track 8.flac" type="audio/flac">
+                Your browser does not support the audio element.
+              </audio>
+            </li>
+            <li>
+              <a href="albums/at_your_feet/09 - Track 9.flac">Track 9</a>
+              <audio controls>
+                <source src="albums/at_your_feet/09 - Track 9.flac" type="audio/flac">
+                Your browser does not support the audio element.
+              </audio>
+            </li>
+            <li>
+              <a href="albums/at_your_feet/10 - Track 10.flac">Track 10</a>
+              <audio controls>
+                <source src="albums/at_your_feet/10 - Track 10.flac" type="audio/flac">
+                Your browser does not support the audio element.
+              </audio>
+            </li>
+          </ul>
+        </div>
+        <div class="collapse collapse-arrow bg-neutral my-1" _="on click toggle .collapse-open">
+          <h3 class="collapse-title">Just Worship</h3>
+          <ul class="collapse-content">
+            <li>
+              <a href="albums/just_worship/01 - Friend of God.flac">Friend of God</a>
+              <audio controls>
+                <source src="albums/just_worship/01 - Friend of God.flac" type="audio/flac">
+                Your browser does not support the audio element.
+              </audio>
+            </li>
+            <li>
+              <a href="albums/just_worship/02 - Holy is the Lord.flac">Holy is the Lord</a>
+              <audio controls>
+                <source src="albums/just_worship/02 - Holy is the Lord.flac" type="audio/flac">
+                Your browser does not support the audio element.
+              </audio>
+            </li>
+            <li>
+              <a href="albums/just_worship/03 - Indescribable.flac">Indescribable</a>
+              <audio controls>
+                <source src="albums/just_worship/03 - Indescribable.flac" type="audio/flac">
+                Your browser does not support the audio element.
+              </audio>
+            </li>
+            <li>
+              <a href="albums/just_worship/04 - Blessed be Your Name.flac">Blessed be Your Name</a>
+              <audio controls>
+                <source src="albums/just_worship/04 - Blessed be Your Name.flac" type="audio/flac">
+                Your browser does not support the audio element.
+              </audio>
+            </li>
+            <li>
+              <a href="albums/just_worship/05 - Dialogue.flac">Dialogue</a>
+              <audio controls>
+                <source src="albums/just_worship/05 - Dialogue.flac" type="audio/flac">
+                Your browser does not support the audio element.
+              </audio>
+            </li>
+            <li>
+              <a href="albums/just_worship/06 - More of You.flac">More of You</a>
+              <audio controls>
+                <source src="albums/just_worship/06 - More of You.flac" type="audio/flac">
+                Your browser does not support the audio element.
+              </audio>
+            </li>
+            <li>
+              <a href="albums/just_worship/07 - I Worship You.flac">I Worship You</a>
+              <audio controls>
+                <source src="albums/just_worship/07 - I Worship You.flac" type="audio/flac">
+                Your browser does not support the audio element.
+              </audio>
+            </li>
+            <li>
+              <a href="albums/just_worship/08 - Your Name.flac">Your Name</a>
+              <audio controls>
+                <source src="albums/just_worship/08 - Your Name.flac" type="audio/flac">
+                Your browser does not support the audio element.
+              </audio>
+            </li>
+            <li>
+              <a href="albums/just_worship/09 - Great is thy Faithfulness.flac">Great is thy Faithfulness</a>
+              <audio controls>
+                <source src="albums/just_worship/09 - Great is thy Faithfulness.flac" type="audio/flac">
+                Your browser does not support the audio element.
+              </audio>
+            </li>
+            <li>
+              <a href="albums/just_worship/10 - Only in You.flac">Only in You</a>
+              <audio controls>
+                <source src="albums/just_worship/10 - Only in You.flac" type="audio/flac">
+                Your browser does not support the audio element.
+              </audio>
+            </li>
+            <li>
+              <a href="albums/just_worship/11 - Doxology.flac">Doxology</a>
+              <audio controls>
+                <source src="albums/just_worship/11 - Doxology.flac" type="audio/flac">
+                Your browser does not support the audio element.
+              </audio>
+            </li>
+          </ul>
+        </div>
+        <div class="collapse collapse-arrow bg-neutral my-1" _="on click toggle .collapse-open">
+          <h3 class="collapse-title">There is a God</h3>
+          <ul class="collapse-content">
+            <li>
+              <a href="albums/there_is_a_god/01 - Track 1.flac">Track 1</a>
+              <audio controls>
+                <source src="albums/there_is_a_god/01 - Track 1.flac" type="audio/flac">
+                Your browser does not support the audio element.
+              </audio>
+            </li>
+            <li>
+              <a href="albums/there_is_a_god/02 - Track 2.flac">Track 2</a>
+              <audio controls>
+                <source src="albums/there_is_a_god/02 - Track 2.flac" type="audio/flac">
+                Your browser does not support the audio element.
+              </audio>
+            </li>
+            <li>
+              <a href="albums/there_is_a_god/03 - Track 3.flac">Track 3</a>
+              <audio controls>
+                <source src="albums/there_is_a_god/03 - Track 3.flac" type="audio/flac">
+                Your browser does not support the audio element.
+              </audio>
+            </li>
+            <li>
+              <a href="albums/there_is_a_god/04 - Track 4.flac">Track 4</a>
+              <audio controls>
+                <source src="albums/there_is_a_god/04 - Track 4.flac" type="audio/flac">
+                Your browser does not support the audio element.
+              </audio>
+            </li>
+            <li>
+              <a href="albums/there_is_a_god/05 - Track 5.flac">Track 5</a>
+              <audio controls>
+                <source src="albums/there_is_a_god/05 - Track 5.flac" type="audio/flac">
+                Your browser does not support the audio element.
+              </audio>
+            </li>
+            <li>
+              <a href="albums/there_is_a_god/06 - Track 6.flac">Track 6</a>
+              <audio controls>
+                <source src="albums/there_is_a_god/06 - Track 6.flac" type="audio/flac">
+                Your browser does not support the audio element.
+              </audio>
+            </li>
+            <li>
+              <a href="albums/there_is_a_god/07 - Track 7.flac">Track 7</a>
+              <audio controls>
+                <source src="albums/there_is_a_god/07 - Track 7.flac" type="audio/flac">
+                Your browser does not support the audio element.
+              </audio>
+            </li>
+            <li>
+              <a href="albums/there_is_a_god/08 - Track 8.flac">Track 8</a>
+              <audio controls>
+                <source src="albums/there_is_a_god/08 - Track 8.flac" type="audio/flac">
+                Your browser does not support the audio element.
+              </audio>
+            </li>
+            <li>
+              <a href="albums/there_is_a_god/09 - Track 9.flac">Track 9</a>
+              <audio controls>
+                <source src="albums/there_is_a_god/09 - Track 9.flac" type="audio/flac">
+                Your browser does not support the audio element.
+              </audio>
+            </li>
+            <li>
+              <a href="albums/there_is_a_god/10 - Track 10.flac">Track 10</a>
+              <audio controls>
+                <source src="albums/there_is_a_god/10 - Track 10.flac" type="audio/flac">
+                Your browser does not support the audio element.
+              </audio>
+            </li>
+          </ul>
+        </div>
+        <div class="collapse collapse-arrow bg-neutral my-1" _="on click toggle .collapse-open">
+          <h3 class="collapse-title">Live in Mexico</h3>
+          <ul class="collapse-content">
+            <li>
+              <a href="albums/live_in_mexico/01 - Track 1.flac">Track 1</a>
+              <audio controls>
+                <source src="albums/live_in_mexico/01 - Track 1.flac" type="audio/flac">
+                Your browser does not support the audio element.
+              </audio>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="py-10">
+      <h2 class="text-2xl font-bold">Charts</h2>
+      <ul class="flex flex-wrap">
+        <li class="card card-bordered m-1 bg-neutral">
+          <div class="card-body p-6">
+            <a class="card-title" href="charts/At_Your_Feet.pdf" target="_blank">At Your Feet</a>
+            <img class="mx-auto" src="thumbnails/At_Your_Feet_thumb.png" alt="At Your Feet" width="100" height="150">
+          </div>
+        </li>
+        <li class="card card-bordered m-1 bg-neutral">
+          <div class="card-body p-6">
+            <a class="card-title" href="charts/Blessed_Be_Your_Name.pdf" target="_blank">Blessed Be Your Name</a>
+            <img class="mx-auto" src="thumbnails/Blessed_Be_Your_Name_thumb.png" alt="Blessed Be Your Name" width="100" height="150">
+          </div>
+        </li>
+        <li class="card card-bordered m-1 bg-neutral">
+          <div class="card-body p-6">
+            <a class="card-title" href="charts/Eagles_Wings.pdf" target="_blank">Eagles Wings</a>
+            <img class="mx-auto" src="thumbnails/Eagles_Wings_thumb.png" alt="Eagles Wings" width="100" height="150">
+          </div>
+        </li>
+        <li class="card card-bordered m-1 bg-neutral">
+          <div class="card-body p-6">
+            <a class="card-title" href="charts/Everything.pdf" target="_blank">Everything</a>
+            <img class="mx-auto" src="thumbnails/Everything_thumb.png" alt="Everything" width="100" height="150">
+          </div>
+        </li>
+        <li class="card card-bordered m-1 bg-neutral">
+          <div class="card-body p-6">
+            <a class="card-title" href="charts/Higher.pdf" target="_blank">Higher</a>
+            <img class="mx-auto" src="thumbnails/Higher_thumb.png" alt="Higher" width="100" height="150">
+          </div>
+        </li>
+        <li class="card card-bordered m-1 bg-neutral">
+          <div class="card-body p-6">
+            <a class="card-title" href="charts/I_Am.pdf" target="_blank">I Am</a>
+            <img class="mx-auto" src="thumbnails/I_Am_thumb.png" alt="I Am" width="100" height="150">
+          </div>
+        </li>
+        <li class="card card-bordered m-1 bg-neutral">
+          <div class="card-body p-6">
+            <a class="card-title" href="charts/More_Of_You.pdf" target="_blank">More Of You</a>
+            <img class="mx-auto" src="thumbnails/More_Of_You_thumb.png" alt="More Of You" width="100" height="150">
+          </div>
+        </li>
+        <li class="card card-bordered m-1 bg-neutral">
+          <div class="card-body p-6">
+            <a class="card-title" href="charts/None_Compare.pdf" target="_blank">None Compare</a>
+            <img class="mx-auto" src="thumbnails/None_Compare_thumb.png" alt="None Compare" width="100" height="150">
+          </div>
+        </li>
+        <li class="card card-bordered m-1 bg-neutral">
+          <div class="card-body p-6">
+            <a class="card-title" href="charts/River_Flow.pdf" target="_blank">River Flow</a>
+            <img class="mx-auto" src="thumbnails/River_Flow_thumb.png" alt="River Flow" width="100" height="150">
+          </div>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <script>
+    const colors = ['#ff0000', '#00ff00', '#ffffff', '#ff00ff', '#ffa500', '#ffff00', '#00ff00', '#ffffff', '#ff00ff'];
+    const numDots = 10;
+    let mouseX = 0, mouseY = 0;
+    const isIE = !!document.all;
+    const isNS = !!document.layers;
+    const isModern = !isIE && !isNS && !!document.getElementById;
+    const container = document.createElement('div');
+    container.style.position = 'absolute';
+    container.style.top = '0px';
+    container.style.left = '0px';
+    document.body.appendChild(container);
+  
+    for (let i = 0; i < numDots; i++) {
+      const dot = document.createElement('div');
+      dot.id = `dot${i}`;
+      dot.style.position = 'absolute';
+      dot.style.width = `${i / 2}px`;
+      dot.style.height = `${i / 2}px`;
+      dot.style.backgroundColor = '#ff0000';
+      dot.style.fontSize = `${i / 2}px`;
+      container.appendChild(dot);
+    }
+  
+    document.onmousemove = (event) => {
+      mouseX = event.pageX + 1;
+      mouseY = event.pageY + 4;
+    };
+  
+    const animate = () => {
+      const scrollY = window.pageYOffset || document.documentElement.scrollTop;
+      container.style.top = `${scrollY}px`;
+  
+      for (let i = 0; i < numDots; i++) {
+        const dot = document.getElementById(`dot${i}`);
+        const nextDot = document.getElementById(`dot${i + 1}`);
+        dot.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+  
+        if (i < numDots - 1) {
+          dot.style.top = nextDot.style.top;
+          dot.style.left = nextDot.style.left;
+        } else {
+          dot.style.top = `${mouseY + scrollY}px`;
+          dot.style.left = `${mouseX}px`;
+        }
+      }
+  
+      setTimeout(animate, 10);
+    };
+  
+    animate();
+  </script>  
+</body>
+</html>
